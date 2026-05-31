@@ -11,6 +11,28 @@ tags.forEach(tag => {
 
 // Smooth sequential fade-in animation for sections on page load
 document.addEventListener('DOMContentLoaded', () => {
+// Add this inside document.addEventListener('DOMContentLoaded', () => { ... })
+const copyEmailBtn = document.getElementById('copyEmailBtn');
+const emailTooltip = document.getElementById('emailTooltip');
+
+if (copyEmailBtn && emailTooltip) {
+    copyEmailBtn.addEventListener('click', () => {
+        const emailAddress = copyEmailBtn.getAttribute('data-email');
+        
+        navigator.clipboard.writeText(emailAddress).then(() => {
+            // Change tooltip text
+            emailTooltip.textContent = 'Copied!';
+            
+            // Reset text after 1.5 seconds
+            setTimeout(() => {
+                emailTooltip.textContent = 'Click to copy';
+            }, 1500);
+        }).catch(err => {
+            console.error('Could not copy text: ', err);
+        });
+    });
+}
+
     const sections = document.querySelectorAll('section');
     sections.forEach((section, index) => {
         section.style.opacity = '1';
