@@ -16,24 +16,32 @@
     <!-- Header -->
     <header>
         <div class="header-container">
-            <h1>Danylo Vahanov</h1>
-            <div class="subtitle">Cloud Administrator / DevOps Engineer</div>
-            <nav>
-                <a href="#skills">🛠 Skills</a>
-                <a href="#experience">💼 Experience</a>
-                <a href="#education">🎓 Education</a>
-                <a href="#additional">📝 Additional Info</a>
-<!-- Insert this right under <div class="subtitle">...</div> -->
-<div class="header-contacts">
-    <button class="contact-btn" id="copyEmailBtn" data-email="danylo.vahanov@gmail.com">
-        📧 danylo.vahanov@gmail.com
-        <span class="tooltip" id="emailTooltip">Click to copy</span>
-    </button>
-    <a href="https://www.linkedin.com/in/danylo-vahanov-210811184?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-link">
-        💼 LinkedIn Profile
-    </a>
-</div>
+            
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button id="btn-en" class="lang-btn active">EN</button>
+                <span class="divider">|</span>
+                <button id="btn-uk" class="lang-btn">UA</button>
+            </div>
 
+            <h1>Danylo Vahanov</h1>
+            <div class="subtitle" data-i18n="subtitle">Cloud Administrator / DevOps Engineer</div>
+            
+            <nav>
+                <a href="#skills" data-i18n="navSkills">🛠 Skills</a>
+                <a href="#experience" data-i18n="navExp">💼 Experience</a>
+                <a href="#education" data-i18n="navEdu">🎓 Education</a>
+                <a href="#additional" data-i18n="navAdd">📝 Additional Info</a>
+
+                <div class="header-contacts">
+                    <button class="contact-btn" id="copyEmailBtn" data-email="danylo.vahanov@gmail.com">
+                        📧 danylo.vahanov@gmail.com
+                        <span class="tooltip" id="emailTooltip" data-i18n="tooltipCopy">Click to copy</span>
+                    </button>
+                    <a href="https://www.linkedin.com/in/danylo-vahanov-210811184" target="_blank" class="contact-link" data-i18n="linkedin">
+                        💼 LinkedIn Profile
+                    </a>
+                </div>
             </nav>
         </div>
     </header>
@@ -46,21 +54,21 @@
             
             <!-- Languages Block -->
             <section id="languages">
-                <h2>Languages</h2>
+                <h2 data-i18n="h2Lang">Languages</h2>
                 <div class="skills-category">
                     <div class="skills-list">
-                        <span class="skill-tag" style="border-color: var(--accent-purple);">English: A2/B1</span>
-                        <span class="skill-tag">Ukrainian: Native</span>
+                        <span class="skill-tag" style="border-color: var(--accent-purple);" data-i18n="langEn">English: A2/B1</span>
+                        <span class="skill-tag" data-i18n="langUk">Ukrainian: Native</span>
                     </div>
                 </div>
             </section>
 
             <!-- Technical Skills -->
             <section id="skills">
-                <h2>Technical Skills</h2>
+                <h2 data-i18n="h2Skills">Technical Skills</h2>
                 
                 <div class="skills-category">
-                    <h3>Programming Languages</h3>
+                    <h3 data-i18n="h3Prog">Programming Languages</h3>
                     <div class="skills-list">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Bash</span>
@@ -69,16 +77,16 @@
                 </div>
 
                 <div class="skills-category">
-                    <h3>Cloud Services</h3>
+                    <h3 data-i18n="h3Cloud">Cloud Services</h3>
                     <div class="skills-list">
                         <span class="skill-tag">AWS ( EC2, VPC, ELB )</span>
                         <span class="skill-tag">CloudWatch</span>
-                        <span class="skill-tag">Azure( Azure AD, Autopilot )</span>
+                        <span class="skill-tag">Azure ( Azure AD, Autopilot )</span>
                     </div>
                 </div>
 
                 <div class="skills-category">
-                    <h3>Infrastructure, Tools & OS</h3>
+                    <h3 data-i18n="h3Infra">Infrastructure, Tools & OS</h3>
                     <div class="skills-list">
                         <span class="skill-tag">Linux (Ubuntu, CentOS)</span>
                         <span class="skill-tag">Windows Server</span>
@@ -91,26 +99,25 @@
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">Cisco VPN</span>
                         <span class="skill-tag">Git / GitHub</span>
-
                     </div>
                 </div>
             </section>
 
             <!-- Education -->
             <section id="education">
-                <h2>Education</h2>
+                <h2 data-i18n="h2Edu">Education</h2>
     
                 <!-- Bachelor's Degree -->
                 <div class="edu-item" style="margin-bottom: 25px;">
-                    <div class="edu-title">KROK University</div>
-                    <div class="edu-spec">Bachelor's Degree in Computer Science</div>
+                    <div class="edu-title" data-i18n="uniKrok1">KROK University</div>
+                    <div class="edu-spec" data-i18n="degBach">Bachelor's Degree in Computer Science</div>
                     <div class="period">2018 — 2022</div>
                 </div>
 
                 <!-- Associate Degree -->
                 <div class="edu-item">
-                    <div class="edu-title">KROK University</div>
-                    <div class="edu-spec">Associate Degree in Computer Science</div>
+                    <div class="edu-title" data-i18n="uniKrok2">KROK University</div>
+                    <div class="edu-spec" data-i18n="degAssoc">Associate Degree in Computer Science</div>
                     <div class="period">2016 — 2018</div>
                 </div>
             </section>
@@ -122,31 +129,31 @@
             
             <!-- Professional Experience -->
             <section id="experience">
-                <h2>Professional Experience</h2>
+                <h2 data-i18n="h2Exp">Professional Experience</h2>
 
-                <!-- Current/Most Recent Position (2025 - Present) -->
+                <!-- Current/Most Recent Position -->
                 <div class="timeline-item">
-                    <div class="job-title">Technical Engineer</div>
-                    <div class="company">Outsource</div>
-                    <div class="period">From 2026</div>
+                    <div class="job-title" data-i18n="jobTech1">Technical Engineer</div>
+                    <div class="company" data-i18n="compOut">Outsource</div>
+                    <div class="period" data-i18n="periodOut">From 2026</div>
                     <ul class="job-desc">
-                        <li><strong>Android Automation:</strong> Developed Python scripts and lightweight applications to automate configurations, settings, and internal parameters of Android devices at the OS level using ADB.</li>
-                        <li><strong>Outsource Administration:</strong> Acquired practical experience in remote technical administration and maintenance for fleets of Android devices.</li>
+                        <li data-i18n="descOut1"><strong>Android Automation:</strong> Developed Python scripts and lightweight applications to automate configurations, settings, and internal parameters of Android devices at the OS level using ADB.</li>
+                        <li data-i18n="descOut2"><strong>Outsource Administration:</strong> Acquired practical experience in remote technical administration and maintenance for fleets of Android devices.</li>
                     </ul>
                 </div>
 
-                <!-- Previous Position (2022 - 2025) -->
+                <!-- Previous Position -->
                 <div class="timeline-item">
-                    <div class="job-title">Technical Engineer</div>
-                    <div class="company">Infopulse Ukraine</div>
+                    <div class="job-title" data-i18n="jobTech2">Technical Engineer</div>
+                    <div class="company" data-i18n="compInfo">Infopulse Ukraine</div>
                     <div class="period">2022 — 2025</div>
                     <ul class="job-desc">
-                        <li><strong>Administration & Support:</strong> Managing users, access permissions, and group policies within Microsoft Server Active Directory and Azure AD. Providing expert L1/L2 technical support for internal and external specialists, resolving complex software and network-related issues (Cisco VPN, driver configurations, internal corporate services).</li>
-                        <li><strong>Ticketing Systems:</strong> Efficiently processing, classifying, and resolving incidents and service requests using the company's internal ticketing system.</li>
-                        <li><strong>Automation & Optimization:</strong> Developing PowerShell scripts to automate routine Active Directory administrative tasks, significantly increasing team efficiency.</li>
-                        <li><strong>Database Administration:</strong> Contributing to a time-tracking project by setting up workspaces and reports for new projects using SQL queries, as well as administering the SQL Server.</li>
-                        <li><strong>Infrastructure & Device Deployment:</strong> Organizing and configuring workstations. Successfully transitioned company workflows from manual hardware connection (LAN) to automated device deployment and management via Microsoft Autopilot.</li>
-                        <li><strong>Large-scale Integration:</strong> Actively participated in the technical integration of IT systems and infrastructure during the merger of Infopulse and Tietoevry, ensuring business continuity.</li>
+                        <li data-i18n="descInfo1"><strong>Administration & Support:</strong> Managing users, access permissions, and group policies within Microsoft Server Active Directory and Azure AD. Providing expert L1/L2 technical support for internal and external specialists, resolving complex software and network-related issues (Cisco VPN, driver configurations, internal corporate services).</li>
+                        <li data-i18n="descInfo2"><strong>Ticketing Systems:</strong> Efficiently processing, classifying, and resolving incidents and service requests using the company's internal ticketing system.</li>
+                        <li data-i18n="descInfo3"><strong>Automation & Optimization:</strong> Developing PowerShell scripts to automate routine Active Directory administrative tasks, significantly increasing team efficiency.</li>
+                        <li data-i18n="descInfo4"><strong>Database Administration:</strong> Contributing to a time-tracking project by setting up workspaces and reports for new projects using SQL queries, as well as administering the SQL Server.</li>
+                        <li data-i18n="descInfo5"><strong>Infrastructure & Device Deployment:</strong> Organizing and configuring workstations. Successfully transitioned company workflows from manual hardware connection (LAN) to automated device deployment and management via Microsoft Autopilot.</li>
+                        <li data-i18n="descInfo6"><strong>Large-scale Integration:</strong> Actively participated in the technical integration of IT systems and infrastructure during the merger of Infopulse and Tietoevry, ensuring business continuity.</li>
                     </ul>
                 </div>
             </section>
@@ -154,16 +161,16 @@
             <!-- Additional Information -->
             <section id="additional" class="accordion-section">
                 <div class="toggle-header" id="accordionToggle">
-                    <h2>Additional Information</h2>
+                    <h2 data-i18n="h2Add">Additional Information</h2>
                     <span class="accordion-icon">▼</span>
                 </div>
                 <div class="accordion-content" id="accordionContent">
                     <ul class="job-desc">
-                        <li><strong>Professional Development (DevOps & Cloud):</strong> Actively deepening knowledge in DevOps methodologies (CI/CD, Git) and AWS cloud infrastructure. Independently deploying test environments: configuring Nginx web servers on EC2 instances, managing domains, and testing local infrastructure using Vagrant and Docker.</li>
-                        <li><strong>Artificial Intelligence:</strong> Deeply interested in the practical implementation, architecture, and capabilities of modern Artificial Intelligence models (AI/LLM).</li>
-                        <li><strong>3D Printing & Engineering Modeling:</strong> Possess hands-on experience with 3D printing (calibration, slicing, material selection). Currently practicing precise parts and engineering modeling in Fusion 360 tailored for 3D printing.</li>
-                        <li><strong>Experience in 2D/3D Design:</strong> Prior to entering the IT sector, worked as a 2D/3D designer at a jewelry company, developing intricate product designs. Highly proficient in Blender, with foundational experience in 3ds Max and Maya.</li>
-                        <li><strong>Multimedia & Video Editing:</strong> Experienced as a videographer and photographer. Professionally skilled in image editing and graphics enhancement using Adobe Photoshop and After Effects, as well as video editing in Adobe Premiere Pro and DaVinci Resolve.</li>
+                        <li data-i18n="descAdd1"><strong>DevOps & Cloud:</strong> Passionate about cloud infrastructure with practical experience in AWS and Oracle Cloud. Capable of independently provisioning EC2 and Ampere instances, configuring Nginx web servers, and managing domains. Currently mastering foundational DevOps methodologies (CI/CD, Git) and exploring local infrastructure testing using Vagrant and Docker.</li>
+                        <li data-i18n="descAdd2"><strong>Artificial Intelligence:</strong> Deeply interested in the practical implementation, architecture, and capabilities of modern Artificial Intelligence models (AI/LLM).</li>
+                        <li data-i18n="descAdd3"><strong>3D Printing & Engineering Modeling:</strong> Possess hands-on experience with 3D printing (calibration, slicing, material selection). Currently practicing precise parts and engineering modeling in Fusion 360 tailored for 3D printing.</li>
+                        <li data-i18n="descAdd4"><strong>Experience in 2D/3D Design:</strong> Prior to entering the IT sector, worked as a 2D/3D designer at a jewelry company, developing intricate product designs. Highly proficient in Blender, with foundational experience in 3ds Max and Maya.</li>
+                        <li data-i18n="descAdd5"><strong>Multimedia & Video Editing:</strong> Experienced as a videographer and photographer. Professionally skilled in image editing and graphics enhancement using Adobe Photoshop and After Effects, as well as video editing in Adobe Premiere Pro and DaVinci Resolve.</li>
                     </ul>
                 </div>
             </section>
@@ -173,7 +180,7 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container-footer">
+        <div class="container-footer" data-i18n="footer">
             &copy; <span id="year"></span> | Danylo Vahanov | One-page CV
         </div>
     </footer>
