@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danylo Vahanov | Cloud Administrator & DevOps Resume</title>
+    <title>Danylo Vahanov | Resume</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,23 +25,24 @@
             </div>
 
             <h1>Danylo Vahanov</h1>
-            <div class="subtitle" data-i18n="subtitle">Cloud Administrator / DevOps Engineer</div>
             
             <nav>
                 <a href="#skills" data-i18n="navSkills">🛠 Skills</a>
                 <a href="#experience" data-i18n="navExp">💼 Experience</a>
                 <a href="#education" data-i18n="navEdu">🎓 Education</a>
                 <a href="#additional" data-i18n="navAdd">📝 Additional Info</a>
+            </nav>
 
-                <div class="header-contacts">
-                    <button class="contact-btn" id="copyEmailBtn" data-email="danylo.vahanov@gmail.com">
-                        📧 danylo.vahanov@gmail.com
-                        <span class="tooltip" id="emailTooltip" data-i18n="tooltipCopy">Click to copy</span>
-                    </button>
-                    <a href="https://www.linkedin.com/in/danylo-vahanov-210811184" target="_blank" class="contact-link" data-i18n="linkedin">
-                        💼 LinkedIn Profile
-                    </a>
-                </div>
+            <!-- Блок з контактами винесено за межі <nav> -->
+            <div class="header-contacts" style="margin-top: 20px;">
+                <button class="contact-btn" id="copyEmailBtn" data-email="danylo.vahanov@gmail.com">
+                    📧 danylo.vahanov@gmail.com
+                    <span class="tooltip" id="emailTooltip" data-i18n="tooltipCopy">Click to copy</span>
+                </button>
+                <a href="https://www.linkedin.com/in/danylo-vahanov-210811184" target="_blank" class="contact-link" data-i18n="linkedin">
+                    💼 LinkedIn Profile
+                </a>
+            </div>
             </nav>
         </div>
     </header>
@@ -131,26 +132,49 @@
             <section id="experience">
                 <h2 data-i18n="h2Exp">Professional Experience</h2>
 
-                <!-- Current/Most Recent Position -->
+                <!-- Confidential MilTech Project -->
                 <div class="timeline-item">
-                    <div class="job-title" data-i18n="jobTech1">Technical Engineer</div>
-                    <div class="company" data-i18n="compOut">Outsource</div>
-                    <div class="period" data-i18n="periodOut">From 2026</div>
+                    <div class="job-title" data-i18n="jobMilTech">UAV / FPV Engineer</div>
+                    <div class="company" data-i18n="compMilTech">MilTech Project</div>
+                    <div class="period" data-i18n="periodMilTech">Sep 2026 — Present</div>
                     <ul class="job-desc">
-                        <li data-i18n="descOut1"><strong>Android Automation & Administration:</strong> Developed Python scripts and lightweight applications to automate configurations, settings, and internal parameters of Android devices at the OS level using ADB. Acquired practical experience in remote technical administration and maintenance for fleets of Android devices.</li>
-                        <li data-i18n="descOut3"><strong>Cloud Administration:</strong> Supporting users and managing resources within Azure and Microsoft infrastructure.</li>
-                        <li data-i18n="descOut4"><strong>DevOps & Cloud:</strong> Practical experience in AWS and Oracle Cloud. Capable of independently provisioning EC2, configuring Nginx web servers, and managing domains.</li>
-                        <li data-i18n="descOut5"><strong>ML & AI Engineering:</strong> Hands-on experience in fine-tuning YOLO Computer Vision models for specialized CAPTCHA OCR tasks. Skilled in orchestrating local generative workflows using ComfyUI, deploying AI environments via Pinokio, and using autonomous AI agents (Hermes).
+                        <li data-i18n="descMilTech1"><strong>Assembly & Maintenance:</strong> Executing full-cycle FPV drone assembly, fine-pitch soldering, and comprehensive hardware configuration.</li>
+                        <li data-i18n="descMilTech2"><strong>Firmware & Systems:</strong> Flashing and configuring Flight Controllers , Electronic Speed Controllers , and radio receivers primarily using Betaflight.</li>
+                        <li data-i18n="descMilTech3"><strong>Quality Assurance:</strong> Performing final stage quality control, inspecting the soldering and assembly integrity of drones built.</li>
+                    </ul>
+                </div>
+
+                <!-- Motorsport Network -->
+                <div class="timeline-item">
+                    <div class="job-title" data-i18n="jobMotorsport">TSE / Cloud Administrator</div>
+                    <div class="company" data-i18n="compMotorsport">Motorsport Network</div>
+                    <div class="period" data-i18n="periodMotorsport">Jul 2026 — Present</div>
+                    <ul class="job-desc">
+                        <li data-i18n="descMotorsport1"><strong>Cloud Infrastructure:</strong> Managing and monitoring Microsoft Azure cloud environments. Responsible for resource provisioning, performance optimization, and maintaining high availability of cloud services.</li>
+                        <li data-i18n="descMotorsport2"><strong>Azure Administration:</strong> Providing advanced technical support for Azure users. Managing identities, role-based access control (RBAC), and licenses via Entra ID (Azure AD), as well as troubleshooting complex cloud-related access and configuration issues.</li>
+                    </ul>
+                </div>
+
+                <!-- Serhiy Prytula Charity Foundation -->
+                <div class="timeline-item">
+                    <div class="job-title" data-i18n="jobUAV">UAV Engineer (DJI System)</div>
+                    <div class="company" data-i18n="compUAV">Serhiy Prytula Charity Foundation</div>
+                    <div class="period" data-i18n="periodUAV">Sep 2025 — Sep 2026</div>
+                    <ul class="job-desc">
+                        <li data-i18n="descUAV1"><strong>UAV & Hardware Maintenance:</strong> Configured various DJI drone models, performed microsoldering, and handled light hardware repairs of drone components.</li>
+                        <li data-i18n="descUAV3"><strong>Automation & 3D Engineering:</strong> Developed Python scripts to automate remote controller settings. Engineered and modeled custom drone mounts in Fusion 360 for 3D printing.</li>
+                        <li data-i18n="descUAV5"><strong>Cloud & Infrastructure:</strong> Created and managed instances in AWS and Oracle Cloud, configured Nginx, and set up OpenVPN for secure networks.</li>
+                        <li data-i18n="descUAV6"><strong>Computer Vision (ML):</strong> Fine-tuned the YOLO computer vision model for CAPTCHA recognition and automated reading.</li>
                     </ul>
                 </div>
 
                 <!-- Previous Position -->
                 <div class="timeline-item">
-                    <div class="job-title" data-i18n="jobTech2">Technical Engineer / Cloud Administrator</div>
+                    <div class="job-title" data-i18n="jobTech2">Technical Engineer</div>
                     <div class="company" data-i18n="compInfo">Tietoevry Create Ukraine (ex-Infopulse Ukraine)</div>
                     <div class="period">2022 — 2025</div>
                     <ul class="job-desc">
-                        <li data-i18n="descInfo1"><strong>Administration & Support:</strong> Managing users, access permissions, and group policies within Microsoft Server Active Directory and Azure AD. Providing expert L1/L2 technical support for internal and external specialists, resolving complex software and network-related issues (Cisco VPN, driver configurations, internal corporate services).</li>
+                        <li data-i18n="descInfo1"><strong>Administration & Support:</strong> Managing users, access permissions, and group policies within Microsoft Server Active Directory and Azure AD. Providing expert technical support for internal and external specialists, resolving complex software and network-related issues (Cisco VPN, driver configurations, internal corporate services).</li>
                         <li data-i18n="descInfo2"><strong>Ticketing Systems:</strong> Efficiently processing, classifying, and resolving incidents and service requests using the company's internal ticketing system.</li>
                         <li data-i18n="descInfo3"><strong>Automation & Optimization:</strong> Developing PowerShell scripts to automate routine Active Directory administrative tasks, significantly increasing team efficiency.</li>
                         <li data-i18n="descInfo4"><strong>Database Administration:</strong> Contributing to a time-tracking project by setting up workspaces and reports for new projects using SQL queries, as well as administering the SQL Server.</li>
@@ -178,7 +202,7 @@
     <!-- Footer -->
     <footer>
         <div class="container-footer" data-i18n="footer">
-            &copy; <span id="year"></span> | Danylo Vahanov | One-page CV
+            &copy; <span id="year"></span> | Danylo Vahanov | Resume
         </div>
     </footer>
 
