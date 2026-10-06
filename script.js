@@ -23,7 +23,7 @@ const translations = {
         h2Exp: "Professional Experience",
         
         jobMilTech: "UAV / FPV Engineer",
-        compMilTech: "Confidential MilTech Project",
+        compMilTech: "MilTech Project",
         periodMilTech: "Sep 2026 — Present",
         descMilTech1: "<strong>Assembly & Maintenance:</strong> Executing full-cycle FPV drone assembly, fine-pitch soldering, and comprehensive hardware configuration.",
         descMilTech2: "<strong>Firmware & Systems:</strong> Flashing and configuring Flight Controllers (FC), Electronic Speed Controllers (ESC), and radio receivers (RX) primarily using Betaflight.",
